@@ -9,8 +9,12 @@
         <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/hibse</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    	<mapping resource="fr/afcepf/al28/data/Personne.hbm.xml"/>
-    	<mapping resource="fr/afcepf/al28/data/Operation.hbm.xml"/>
-    	<mapping resource="fr/afcepf/al28/data/Compte.hbm.xml"/>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+<!--     	<mapping resource="fr/afcepf/al28/data/Personne.hbm.xml"/> -->
+<!--     	<mapping resource="fr/afcepf/al28/data/Operation.hbm.xml"/> -->
+<!--     	<mapping resource="fr/afcepf/al28/data/Compte.hbm.xml"/> -->
+    	<mapping class="fr.afcepf.al28.data.Personne"/>
+    	<mapping class="fr.afcepf.al28.data.Operation"/>
+    	<mapping class="fr.afcepf.al28.data.Compte"/>
     </session-factory>
 </hibernate-configuration>
