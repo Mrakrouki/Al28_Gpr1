@@ -3,13 +3,33 @@ package fr.afcepf.al28.data;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+@Entity
+@Table(name = "personne")
 public class Personne {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="id", nullable = false)
 	private Integer id;
+	@Column(name="nom", nullable = false)
 	private String nom;
+	@Column(name="prenom", nullable = false, length=40)
 	private String prenom;
+	@Column(name="adresse", nullable = false)
 	private String adresse;
+	@Temporal(TemporalType.DATE)
+	@Column(name="naissance", nullable = false)
 	private Date naissance;
+	@OneToMany(mappedBy="pers")
 	private List<Compte> comptes;
 	
 	public Integer getId() {
