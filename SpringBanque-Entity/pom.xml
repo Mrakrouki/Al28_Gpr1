@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.afcepf.al28.seb</groupId>
-	<artifactId>SpringBanque</artifactId>
+	<artifactId>SpringBanque-Entity</artifactId>
 	<version>1.0</version>
 	<properties>
 		<compiler.plugin>2.0.2</compiler.plugin>
