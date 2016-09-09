@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect"> org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto"> update </property>
+		<mapping class="entity.Activite" />
+		<mapping class="entity.Admin" />
+		<mapping class="entity.ClientMorale" />
+		<mapping class="entity.ClientPhysique" />
+		<mapping class="entity.Commande" />
+		<mapping class="entity.DisponibiliteParticuliere" />
+		<mapping class="entity.Evaluation" />
+		<mapping class="entity.FournisseurMoral" />
+		<mapping class="entity.FournisseurPhysique" />
+		<mapping class="entity.Images" />
+		<mapping class="entity.PersonneMorale" />
+		<mapping class="entity.PersonnePhysique" />
+		<mapping class="entity.Reservation" />
+		<mapping class="entity.Template" />
+		<mapping class="entity.Zone" />
+	</session-factory>
+</hibernate-configuration>

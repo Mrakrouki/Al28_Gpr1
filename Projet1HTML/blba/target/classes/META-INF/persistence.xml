@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="blba" transaction-type="RESOURCE_LOCAL">
+		<class>entity.Activite</class>
+		<class>entity.Admin</class>
+		<class>entity.ClientMorale</class>
+		<class>entity.ClientPhysique</class>
+		<class>entity.Commande</class>
+		<class>entity.DisponibiliteParticuliere</class>
+		<class>entity.Evaluation</class>
+		<class>entity.FournisseurMoral</class>
+		<class>entity.FournisseurPhysique</class>
+		<class>entity.Images</class>
+		<class>entity.PersonneMorale</class>
+		<class>entity.PersonnePhysique</class>
+		<class>entity.Reservation</class>
+		<class>entity.Zone</class>
+<!-- 		<properties> -->
+<!-- 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/test"/> -->
+<!-- 			<property name="javax.persistence.jdbc.user" value="root"/> -->
+<!-- 			<property name="javax.persistence.jdbc.password" value="afcepf"/> -->
+<!-- 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/> -->
+<!-- 		</properties> -->
+	</persistence-unit>
+</persistence>
